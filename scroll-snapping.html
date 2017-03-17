@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scroll Snapping Demo</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- class "snapping-pane" is a CSS selector for the snapping sections of the page -->
+	<section class="snapping-pane" id="background1">
+		<h1>Section 1</h1>
+		<p>Home screen</p>
+		<!-- nav-container will have position:fixed -->
+		<div class="nav-container">
+			<nav>
+				<div><span>Home</span><button id="section0" class="active"></button></div>
+				<div><span>Design</span><button id="section1"></button></div>
+				<div><span>Features</span><button id="section2"></button></div>
+				<div><span>Product</span><button id="section3"></button></div>
+			</nav>
+		</div>
+	</section>
+	<section class="snapping-pane" id="background2">
+		<h1>Section 2</h1>
+		<p>Design screen---images of the product</p>
+	</section>
+	<section class="snapping-pane" id="background3">
+		<h1>Section 3</h1>
+		<p>Features screen---list of features</p>
+	</section>
+	<section class="snapping-pane" id="background4">
+		<h1>Section 4</h1>
+		<p>Product screen---technical specification of the product</p>
+	</section>
+
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="jquery.scrollify.min.js"></script>
+
+	<script src="scroll-snapping.js"></script>
+</body>
+</html>
